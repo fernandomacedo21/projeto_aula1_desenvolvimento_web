@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/estilo.css"/>
+        <link rel="shortcut icon" href="imagens/favicon.ico">
+        <script src="scripts/verifica.js" defer></script>
+    </head>
+    <body id="corpo-pagina"> 
+        <header>
+            <nav>
+                <ul>
+                    <a href="index.html">Pagina inicial</a>
+                    <a href="sobre.html">Sobre a nossa empresa</a>
+                    <a href="contato.html">Contato</a>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <form method="POST">
+                <div>
+                    <label for="txt-nome">Nome Completo:</label>
+                    <input type="text" id="txt-nome" name= "nome">
+                </div>
+                <div>
+                    <label for="txt-email">E-mail:</label>
+                    <input type="email" id="txt-email" name="email">
+                </div>
+                <div>
+                    Sexo:<br>
+                    <input type="radio" id="rb-feminino" name="sexo" value="F">
+                    <label for="rb-feminino">Feminino</label>
+
+                    <input type="radio" id="rb-masculino" name="sexo" value="M" checked>
+                    <label for="rb-masculino">Masculino</label>
+                <div>
+                    <label for="txt-mensagem">Escreva sua mensagem:</label><br>
+                    <textarea name="mensagem" id="txt-mensagem" ></textarea>
+                <div>
+                    <label for="tipo-assunto">Tipo Assunto:</label>
+                    <select name="assunto" id="tipo-assunto">
+                        <option>Sugestão</option>
+                        <option>Dúvida</option>
+                        <option selected>Reclamações</option>
+                    </select>
+                </div>
+
+                <div>
+                    Onde você ouviu sobre a Impacta <br>
+                    <input type="checkbox" name="cb_youtube" id="cb_youtube" value="Youtube">
+                    <label for="cb_youtube">Youtube</label>
+
+                    <input type="checkbox" name="cb_tv" id="cb-tv" value="TV">
+                    <label for="cb-tv">TV</label>
+
+                    <input type="checkbox" name="cb_amigos" id="cb-amigos" value="Amigos">
+                    <label for="cb-amigos">Amigos</label>
+                </div>
+
+                <div>
+                    <button type="submit" id="bt-enviar">Enviar</button>
+                    <button type="reset" id="bt-limpar">Limpar</button>
+                </div> 
+            </form>
+            <p id="erros"></p>
+         <footer>
+         </footer>   
+        </main>
+    </body>
+</html>

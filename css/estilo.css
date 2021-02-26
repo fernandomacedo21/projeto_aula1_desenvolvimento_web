@@ -1,0 +1,21 @@
+                .paragrafo-padrao {
+                    color: orangered;
+                    font-size: 20px;
+                    text-align: justify;
+                }
+
+                .titulo-texto{
+                    font-size: 48px;
+                    color: green;
+                }
+
+                #msg-boas-vindas{
+                    color: red;
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+
+                #corpo-pagina{
+                    background-color: rgb(160, 118, 94);
+                }
+           
