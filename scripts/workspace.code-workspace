@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "../../catalogo-cursos-frontend"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}
