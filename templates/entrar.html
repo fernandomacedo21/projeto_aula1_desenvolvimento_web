@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+
+<form action="" method="POST">
+    <div>
+       <label for="txt-usuario">Usuario:</label>
+        <input type="text" id="txt-usuario" name="usuario">
+    </div>
+    <div>
+       <label for="txt-senha">Senha:</label>
+        <input type="password" id="txt-senha" name="senha">
+    </div>
+    <div>
+        <button type="submit" id="bt-entrar">Entrar</button>
+    </div>
+</form>
+<a>{{ mensagem }}</a>
+
+
+{% endblock %}

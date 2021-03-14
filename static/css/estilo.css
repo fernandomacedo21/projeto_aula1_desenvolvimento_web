@@ -1,12 +1,12 @@
                 .paragrafo-padrao {
-                    color: orangered;
+                    color: rgb(58, 34, 26);
                     font-size: 20px;
                     text-align: justify;
                 }
 
                 .titulo-texto{
                     font-size: 48px;
-                    color: green;
+                    color: rgb(33, 112, 33);
                 }
 
                 #msg-boas-vindas{
@@ -16,6 +16,6 @@
                 }
 
                 #corpo-pagina{
-                    background-color: rgb(160, 118, 94);
+                    background-color: rgb(173, 157, 173);
                 }
            

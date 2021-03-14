@@ -1,22 +1,7 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="css/estilo.css"/>
-        <link rel="shortcut icon" href="imagens/favicon.ico">
-        <script src="scripts/verifica.js" defer></script>
-    </head>
-    <body id="corpo-pagina"> 
-        <header>
-            <nav>
-                <ul>
-                    <a href="index.html">Pagina inicial</a>
-                    <a href="sobre.html">Sobre a nossa empresa</a>
-                    <a href="contato.html">Contato</a>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <form method="POST">
+{% extends 'base.html' %}
+{% block conteudo %}
+
+            <form action="" method="POST">
                 <div>
                     <label for="txt-nome">Nome Completo:</label>
                     <input type="text" id="txt-nome" name= "nome">
@@ -40,12 +25,12 @@
                     <select name="assunto" id="tipo-assunto">
                         <option>Sugestão</option>
                         <option>Dúvida</option>
-                        <option selected>Reclamações</option>
+                        <option selected>Reclamação</option>
                     </select>
                 </div>
 
                 <div>
-                    Onde você ouviu sobre a Impacta <br>
+                    Onde você ouviu sobre a Impacta? <br>
                     <input type="checkbox" name="cb_youtube" id="cb_youtube" value="Youtube">
                     <label for="cb_youtube">Youtube</label>
 
@@ -62,8 +47,4 @@
                 </div> 
             </form>
             <p id="erros"></p>
-         <footer>
-         </footer>   
-        </main>
-    </body>
-</html>
+{% endblock %}         

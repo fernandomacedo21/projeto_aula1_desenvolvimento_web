@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block conteudo%}
+
+<h1>{{ titulo}}</h1>
+            <ul>
+                {% for item in nomes %}
+                    {% if item == 'João' %}
+                    <li style ='color: rgb(107, 57, 107)'>{{ item }}</li>
+                    {% elif item == 'Raquel' %}    
+                    <li style='color: rgb(21, 122, 122)'>{{item}}</li>
+                    {% else %}
+                    <li>{{ item }}</li> 
+                    {% endif %}
+                {% endfor %}
+            </ul>    
+
+{% endblock %}                
+                

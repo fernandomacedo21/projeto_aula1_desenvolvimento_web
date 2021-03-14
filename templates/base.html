@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/css/estilo.css"/>
+        <link rel="shortcut icon" href="/static/imagens/favicon.ico">
+        <script src="/static/scripts/verifica.js" defer></script>
+    </head>
+    <body id="corpo-pagina"> 
+        <header>
+            <nav>
+                <ul>
+                    <a href="/index.html">Pagina inicial</a>
+                    <a href="/sobre.html">Sobre a nossa empresa</a>
+                    <a href="/contato">Contato</a>
+                    <a href="/demonstracao">Demonstração</a>
+                    <a href="/entrar">Entrar na área logada</a>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            {% block conteudo %}
+            {% endblock%}
+        </main>
+            
+        <footer>
+         
+         </footer>
+    </body>
+</html>
